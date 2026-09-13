@@ -1,0 +1,10 @@
+out/
+apk/
+build/*
+!build/ClipDirect2.apk
+libs/
+*.db
+*.db-shm
+*.db-wal
+debug.keystore
+*.zip
