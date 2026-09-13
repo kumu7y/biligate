@@ -1,7 +1,7 @@
 out/
 apk/
 build/*
-!build/ClipDirect2.apk
+!build/BilibiliRedirect.apk
 libs/
 *.db
 *.db-shm

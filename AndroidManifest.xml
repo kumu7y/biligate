@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kumu7y.biligate" android:versionCode="2" android:versionName="2.0.0">
+    package="com.kumu7y.biligate" android:versionCode="3" android:versionName="2.0.1">
     <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="34"/>
-    <application android:label="BiliGate">
+    <application android:label="Bilibili重定向">
         <meta-data android:name="xposedmodule" android:value="true"/>
-        <meta-data android:name="xposeddescription" android:value="Bilibili intl redirect for ColorOS clipboard &amp; QQ miniapp"/>
+        <meta-data android:name="xposeddescription" android:value="B站国际版重定向:剪贴板卡片 + QQ 小程序"/>
         <meta-data android:name="xposedminversion" android:value="100"/>
     </application>
 </manifest>

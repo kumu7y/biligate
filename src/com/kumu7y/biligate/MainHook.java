@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class MainHook extends XposedModule {
 
-    private static final String TAG = "BiliGate";
+    private static final String TAG = "BiliRedirect";
     private static final Pattern MATCH = Pattern.compile("(bilibili\\.com|b23\\.tv)", Pattern.CASE_INSENSITIVE);
     private static final String FROM_PKG = "tv.danmaku.bili";
     private static final String TO_PKG = "com.bilibili.app.in";

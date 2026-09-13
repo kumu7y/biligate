@@ -35,5 +35,5 @@ if [ ! -f debug.keystore ]; then
 fi
 "$BT/zipalign.exe" -f 4 "$W\build\unsigned.apk" "$W\build\aligned.apk"
 "$BT/apksigner.bat" sign --ks debug.keystore --ks-pass pass:android \
-  --key-pass pass:android --out "$W\build\BiliGate.apk" "$W\build\aligned.apk"
-echo "DONE: $W/build/BiliGate.apk"
+  --key-pass pass:android --out "$W\build\BilibiliRedirect.apk" "$W\build\aligned.apk"
+echo "DONE: $W/build/BilibiliRedirect.apk"

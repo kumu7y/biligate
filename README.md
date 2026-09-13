@@ -1,4 +1,4 @@
-# BiliGate — 哔哩哔哩国际版改道器(ColorOS 剪贴板卡片 + QQ 小程序)
+# Bilibili重定向 — 哔哩哔哩国际版改道器(ColorOS 剪贴板卡片 + QQ 小程序)
 
 把 ColorOS「复制链接弹推荐」卡片从国内版 bilibili(`tv.danmaku.bili`)改道到国际版(`com.bilibili.app.in`)的 LSPosed 模块(现代 API 102)。
 
@@ -51,7 +51,7 @@ adb install build/BiliGate.apk
 - `build.sh` — 一键构建(路径按本机 JDK21/SDK35 写死,需按需修改)
 - `module.prop` / `java_init.list` / `scope.list` / `AndroidManifest.xml` — 模块元数据
 - `api.aar` / `interface.aar` — libxposed 102.0.0 编译期 API
-- `build/BiliGate.apk` — 已构建产物
+- `build/BilibiliRedirect.apk` — 已构建产物
 
 ## QQ 小程序链路(v2.0.0)
 
@@ -61,7 +61,7 @@ QQ 小程序"打开App"会按配置包名查安装,查不到就弹"即将下载"
 1. `ApplicationPackageManager.getApplicationInfo/getPackageInfo`:查 `tv.danmaku.bili` 时改查国际版 → 判定"已安装",不弹下载框
 2. `Intent.setPackage/setComponent`:绑国内版包名的拉起 Intent 改绑国际版(两家同源,Activity 类名一致)
 
-日志:`logcat | grep BiliGate`(qq: pm query redirected / intent package redirected)
+日志:`logcat | grep BiliRedirect`(qq: pm query redirected / intent package redirected)
 
 ## 卸载
 
